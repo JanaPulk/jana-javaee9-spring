@@ -13,9 +13,22 @@ public class FirstController {
     // the same as @slf4j
     //private static final Logger log = LoggerFactory.getLogger(FirstController.class);
 
-    @GetMapping ("/my-first-page")
-    public String firstPage(){
+    @GetMapping("/my-first-page")
+    public String firstPage() {
         log.info("firstPage() method called");
-        return"home-page";
+        return "home-page";
     }
+
+    @GetMapping("/my-second-page")
+    public String secondPage() {
+        log.info("secondPage () method called");
+        return "second-page";
+    }
+
+    @GetMapping("/my-third-page")
+    public String thirdPage() {
+        log.info("third page() method called");
+        return "pages/third-page";
+    }
+
 }
