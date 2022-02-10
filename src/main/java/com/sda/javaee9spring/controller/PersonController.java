@@ -29,14 +29,18 @@ public class PersonController {
 
     @GetMapping("/names")
   public String showListOfPersonsNames(Model data){
-        //String name;
-        //name String;
-
         var persons  = personService.getAllPersons();
 
 
         data.addAttribute(PERSONS_KEY, persons);
       return "persons/persons-names";
 
+  }
+  @GetMapping("/details")
+  public String showDetailedPersonsList(Model data){
+        var persons = personService.getAllPersons();
+
+        data.addAttribute(PERSONS_KEY, persons);
+        return "persons/details-table";
   }
 }
