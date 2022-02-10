@@ -2,6 +2,7 @@ package com.sda.javaee9spring;
 
 
 import com.sda.javaee9spring.component.MyFirstSpringComponent;
+import com.sda.javaee9spring.component.SecondComponent;
 import com.sda.javaee9spring.controller.FirstController;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -38,6 +39,15 @@ public class SpringContextTest {
         // == - checks if two references points to the same object
         //by default every bean inside Spring Context is singleton
         assertSame(mmyFirstSpringComponent, myFirstSpringComponentSecondReference);
+    }
+
+    @Autowired
+    SecondComponent secondComponent;
+    SecondComponent mySecondComponent;
+
+    @Test
+    void  checkMySecondSpringComponent(){
+        assertNotSame(secondComponent, mySecondComponent);
     }
 
 }
