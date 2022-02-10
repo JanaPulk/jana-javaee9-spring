@@ -5,5 +5,5 @@
 - when changing branch, working three should be cean
 ### Commands
 - git status - show what's going on in repository - which brunch i am on now
-- 
-- 
+- git log - shows git history
+- -git log --graph - shows git history as graph

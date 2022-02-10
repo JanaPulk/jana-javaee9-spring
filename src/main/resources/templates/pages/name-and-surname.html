@@ -6,11 +6,9 @@
     <title>Name and surname</title>
 </head>
 <body>
-<p th:text="example">uauau</p>
+<p th:text="example">Text to replace by th: text attribute value </p>
 <h2>My name and surname</h2>
-<my-new-tag></my-new-tag>
 <p>My name is:<span th:text="${myName}">Jana</span> </p>
-<p></p>
-<p>My surname is: Pulk</p>
+<p>My surname is:<span th:text="${mySurname}">Pulk</span></p>
 </body>
 </html>

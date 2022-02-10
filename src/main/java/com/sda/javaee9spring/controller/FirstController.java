@@ -46,8 +46,8 @@ public class FirstController {
         log.info("my name is:[{}] and my surname is: [{}]", myName, mySurname);
         log.info(String.format("my name is: [%s] and my surname is: [%s]",myName, mySurname));
 
-        pageParameters.addAttribute("myName",myName);
-        pageParameters.addAttribute("mySurname",mySurname);
+        pageParameters.addAttribute("myName",myName)
+                .addAttribute("mySurname",mySurname);
 
             return "pages/name-and-surname";
         }
