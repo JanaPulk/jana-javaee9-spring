@@ -2,7 +2,7 @@ package com.sda.javaee9spring.controller;
 
 import com.sda.javaee9spring.entity.Person;
 import lombok.extern.slf4j.Slf4j;
-import lombok.var;
+
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -16,7 +16,7 @@ import java.util.List;
 @RequestMapping( "/person")
 public class PersonController {
 
-    public static final String PERSONS_KEY = "personsKey";
+    public static final String PERSONS_KEY = "persons";
 
     @GetMapping("/names")
   public String showListOfPersonsNames(Model data){
