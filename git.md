@@ -8,4 +8,8 @@
 ### Commands
 - git status - show what's going on in repository - which brunch i am on now and if there are any uncommited changes
 - git branch - show available branches on my machine
+- git log - shows git history
+- -git log --graph - shows git history as graph
 - git branch -a - show all available branches - on my machine and remote ones (Like on Github)
+- git status - show what's going on in repository - which brunch i am on now
+
