@@ -6,6 +6,8 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import java.util.List;
+
 @RestController
 @Slf4j
 @RequestMapping("/rest")
@@ -15,6 +17,13 @@ public class MyFirstRestController {
     @GetMapping("/one-person")
     public Person onePerson(){
         return new Person("Jana", "Pulk", 40);
+    }
 
+    @GetMapping("/persons-array")
+    public Person[] personsArray(){
+        return new Person[]{
+                new Person("Maria", "Thomas", 16),
+                new Person("Tom", "Jones", 25)
+        };
     }
 }
